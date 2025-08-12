@@ -1,0 +1,71 @@
+body {
+  background-color: lightgrey;
+  min-height: 100vh;
+}
+.conteiner {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+h1 {
+  background-color: lightcoral;
+  color: azure;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+}
+.foto {
+  text-align: center;
+}
+#yo {
+  border-radius: 50%;
+  height: 500px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+h2 {
+  background-color: lightcoral;
+  color: azure;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.lista {
+  font-family: Arial, sans-serif;
+  text-align: center justify;
+  font-size: 30px;
+}
+
+.img1 {
+  height: 30px;
+}
+
+h3 {
+  background-color: lightcoral;
+  color: azure;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.redes {
+  text-align: center;
+  gap: 20px;
+}
+
+.img2 {
+  height: 70px;
+}
+
+h4 {
+  background-color: lightcoral;
+  color: azure;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
