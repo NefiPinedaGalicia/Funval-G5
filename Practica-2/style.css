@@ -117,11 +117,3 @@ button {
   font-size: 1rem;
   cursor: pointer;
 }
-
-footer {
-  background-color: #171d25;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
