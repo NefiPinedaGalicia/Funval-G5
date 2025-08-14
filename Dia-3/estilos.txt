@@ -1,0 +1,58 @@
+/* .caja {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  border: black 2px solid;
+  /* primero es el color, luego el grosor, el tipo del borde */
+/*padding: 50px;
+  /* se puede asignar a cada uno de los lados, iniciando de arriba, derecha, abajo, izquierda */
+/*margin: 50px 40px;
+} */
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+.caja_contenedora {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 20px;
+   */
+  gap: 16px;
+}
+
+.caja {
+  height: 200px;
+  width: 200px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.caja1 {
+  background-color: red;
+  margin-left: 10px;
+}
+
+.caja2 {
+  background-color: darkgreen;
+  margin-right: 20px;
+}
+/*
+//*{
+   selecciona todos los elementos del body
+    estos se colocan
+    margin: 0;
+    pading: 0;
+    box-sizing: border-box; 
+    llevar todos los valores por defecto
+} */

@@ -1,0 +1,52 @@
+ <!-- <h1>titulo</h1>
+    <p>soy un parrafo</p>
+    <img src="../Practica-1/discord_icon_130958.png" alt="" height="100px" />
+    <a href="https://github.com/">
+      <img src="../click-here_13881967.png" alt="" height="100px"
+    /></a>
+    <div>
+      <ul>
+        <li>item 1</li>
+        <li>item 1</li>
+      </ul>
+    </div> -->
+    <!-- <div class="caja">
+      <h2>soy un item</h2>
+    </div> -->
+
+    <!-- <div class="caja_contenedora">
+        <div class="caja caja1"> caja1</div>
+         las "cajas" pueden tener mas de una clase que comparten -->
+    <!-- <div class="caja caja2"> caja2</div>
+
+        </div> -->
+    <!-- </div> -->
+
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Pais</th>
+          <th>Edad</th>
+          <th>Mision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nefi</td>
+          <td>Mexico</td>
+          <td>30</td>
+          <td>Si</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <!--  <form action="">
+      <label for="Nombre">Nombre</label>
+      <input type="text" placeholder="Juan Perez" />
+      <label for="Edad">Edad:</label>
+      <input type="number" />
+      <label for="Mision">Serviste una mision</label>
+      <input type="checkbox" name="" id="" />
+      <button>Enviar registro</button>
+    </form> -->

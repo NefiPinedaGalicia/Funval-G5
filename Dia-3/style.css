@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #afb9c7;
+  padding: 20px;
+}
+
+h3 {
+  color: #112f53;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.caja3 {
+  background-color: #112f53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 8%;
+}
+
+form {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2eaf1;
+  color: #112f53;
+  padding: 10px;
+  gap: 1.5px;
+  border-radius: 8%;
+  margin-left: 30px;
+  margin-right: 15px;
+  justify-content: center;
+}
+
+.horario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  text-align: center;
+  color: #112f53;
+  border: none;
+}
+
+button {
+  text-align: center;
+  width: 150px;
+  background-color: #112f53;
+  color: #e2eaf1;
+  border: none;
+  padding: 15px;
+  margin-left: 90px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#logo {
+  width: 350px;
+  height: 350px;
+  border-radius: 8%;
+  margin-left: 15px;
+  margin-right: 30px;
+}
