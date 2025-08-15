@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ad3333;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+header h1 {
+  color: #f1e091;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  background-color: #73242d;
+  color: #f1e091;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+ul {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroe {
+  background-color: #f8f6e0;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.h1-heroe {
+  text-align: center;
+  color: #73242d;
+  font-size: 2rem;
+}
+
+.texto-heroe {
+  width: 50%;
+  text-align: justify;
+  font-size: large;
+  line-height: 1.5;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+button {
+  all: unset;
+  display: block;
+  width: 150px;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #ad3333;
+  color: #f1e091;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.imagen-heroe {
+  width: 50%;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.lista {
+  width: 80%;
+  background-color: #ad3333;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.lista-p {
+  width: 100%;
+  height: 95%;
+  background-color: #f8f6e0;
+}
+
+.h2-lista {
+  color: antiquewhite;
+  margin-bottom: 20px;
+}
+
+.ul-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: square;
+  gap: 2px;
+  padding-left: 25px;
+  font-size: medium;
+  background-color: #f8f6e0;
+}
+
+.li-heroe {
+  margin-bottom: 2px;
+}
+
+.p-lista {
+  margin-top: 10px;
+  font-size: large;
+  background-color: #f8f6e0;
+}
+
+footer {
+  background-color: #73242d;
+  width: 100%;
+  padding: 10px;
+}
+
+h5 {
+  text-align: center;
+  color: #f1e091;
+}
