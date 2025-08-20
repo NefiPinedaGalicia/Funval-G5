@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="h-full w-full">
+    <header
+      class="h-[15%] bg-white text-gray-950 flex justify-between items-center px-6 md:bg-white md:px-8 md:justify-between">
+      <div class="md:hidden"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-8 md:hidden">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      <ul class="gap-8 text-2xl hidden md:flex">
+        <li>Home</li>
+        <li>Carrito</li>
+        <li>Lista de Cartas</li>
+      </ul>
+      <img src="../logo.png" alt="" class="h-[80%]" />
+    </header>
+    <main class="h-[75%] flex items-center justify-center p-4">
+      <div
+        class="contenedor-cards p-8 gap-8 flex flex-col md:w-[60%] md:flex-col">
+        <div
+          class="card rounded-2xl flex bg-pink-200 text-black items-center justify-center p-4 md:flex-row-reverse gap-3">
+          <ul>
+            <li>Munkidori</li>
+            <li>Ralts</li>
+          </ul>
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_695672-MLM81112628283_122024-O-gardevoir-ex-full-art-original-pokemon-proteccion-especial.webp"
+            alt=""
+            class="size-32 md:order-1" />
+        </div>
+        <div
+          class="card flex rounded-2xl bg-orange-400 text-black items-center justify-center p-4 md:flex-row-reverse gap-3">
+          <ul>
+            <li>Thyplosion</li>
+            <li>Victiny</li>
+          </ul>
+          <img
+            src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV10/SV10_EN_190.png"
+            alt=""
+            class="size-32 md:order-1" />
+        </div>
+      </div>
+      <aside>competitivo, busqueda, decklists</aside>
+    </main>
+    <footer class="bg-gray-800 h-[10%] md:bg-gray-900">footer</footer>
+  </body>
+</html>

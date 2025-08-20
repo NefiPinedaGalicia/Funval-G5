@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body class="h-screen flex items-center justify-center bg-gray-400">
+    <!-- <div
+      class="h-64 w-full bg-[url('./Ace.webp')] bg-contain bg-no-repeat bg-center hover:bg-[url('./aceDeath.jpg')]"></div>
+       -->
+    <form
+      action=""
+      class="flex flex-col w-64 gap-4 bg-blue-900 text-white p-4 rounded-2xl">
+      <label for="">Apellido</label>
+      <input
+        type="text"
+        placeholder="Perez"
+        class="outline-none ring-1 ring-gray-500 bg-white focus:ring-sky-400 rounden-sm focus:text-gray-900" />
+      <label for="">Estaca</label>
+      <select
+        name=""
+        id=""
+        class="outline-none ring-1 ring-gray-500 bg-white text-blue-900 focus:ring-sky-400 rounden-sm focus:text-gray-900">
+        Selecciona una opcion
+        <option value="" class="text-blue-900">Azteca</option>
+        <option value="" class="text-blue-900">Anahuac</option>
+        <option value="" class="text-blue-900">Moctesuma</option>
+        <option value="" class="text-blue-900">Industrial</option>
+        <option value="" class="text-blue-900">Madero</option>
+      </select>
+      <label for="">Integrantes Familia</label>
+      <input
+        type="text"
+        placeholder="0"
+        class="outline-none ring-1 ring-gray-500 bg-white focus:ring-sky-400 rounden-sm focus:text-gray-900" />
+      <label for="">Fecha</label>
+      <input
+        type="date"
+        class="outline-none ring-1 ring-gray-500 bg-white focus:ring-sky-400 rounden-sm focus:text-gray-900" />
+      <label for="">Hora</label>
+      <input
+        type="time"
+        class="outline-none ring-1 ring-gray-500 bg-white focus:ring-sky-400 rounden-sm focus:text-gray-900" />
+      <label for="">Correo</label>
+      <input type="email" placeholder="juan@gmail.com" class="outline-none
+      ring-1 ring-gray-500 bg-white focus:ring-sky-400 rounden-sm
+      focus:text-gray-900" invalid:focus:ring-pink-600
+      invalid:focus:text-pink-600" />
+
+      <button class="w-32 disable disabled:bg-gray-700">Enviar</button>
+    </form>
+  </body>
+</html>
