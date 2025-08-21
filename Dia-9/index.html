@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="todo" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body></body>
+  <body
+    class="bg-blue-300 dark:bg-blue-900 h-screen w-full flex items-center justify-center flex-col gap-20">
+    <div class="card w-150 h-250 flex flex-col items-center justify-center p-4 gap-5 bg-orange-200 rounded-2xl dark:bg-orange-900 ">
+      <div class="img w-100 h-150 bg-[url('https://www.penguinlibros.com/es/6017464-home_default/harry-potter-y-el-prisionero-de-azkaban-harry-potter-edicion-con-ilustraciones-de-xavier-bonet-3.webp')] bg-cover bg-no-repeat rounded-2xl dark:bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbGzLo2BIbi-rYQTduxzXPi3lCZzqZPrpf1mx0Lzoojlp-ItuCLzfIn5aUBLVIkh1VLY4&usqp=CAU')] transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"></div>
+      <div class="descripcion flex flex-col gap-10" >
+        <label for="" class="dark:text-white text-2xl ">Nombre: Harry potter </label>
+        <label for="" class="dark:text-white text-2xl ">Descripcion: Harry potter en sus aventuras en hogarts...</label>
+        <label for="" class="dark:text-white text-2xl ">Costo: $100 </label>
+      </div>
+      <button class="comprar w-20 h-10 bg-emerald-300 rounded-2xl active:bg-emerald-800 dark:bg-emerald-800 dark:active:bg-emerald-300 dark:text-white">Comprar</button>
+    </div>
+    <button class="bg-cyan-100 text-black p-4 rounded-2xl hover:dark:bg-gray-400 dark:text-white"
+      id="btn""></button>
+    <script>
+      let todo = document.querySelector("#todo");
+      let botoncito = document.querySelector("#btn");
+      botoncito.addEventListener("click", function () {
+        todo.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>
