@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body class="h-full flex flex-col gap-4">
+    <header
+      class="w-full h-10 border border-black-2 bg-orange-200 flex items-center justify-center text-black text-2xl italic sm:bg-cyan-400 sm:justify-start md:bg-lime-400">
+      Header
+    </header>
+    <main
+      class="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:gap-y-2 sm:gap-x-4 md:grid-cols-3">
+      <div
+        class="w-full h-30 border border-black-2 bg-red-700 flex items-center justify-start sm:h-60 md:justify-center md:items-start md:h-120">
+        <h2 class="text-8xl md:pt-10">1</h2>
+      </div>
+      <div
+        class="w-full h-30 border border-black-2 bg-cyan-300 flex items-center justify-center sm:bg-red-700 sm:justify-end sm:h-60 md:justify-center md:items-start md:h-120">
+        <h2 class="text-8xl md:pt-10">2</h2>
+      </div>
+      <div
+        class="w-full h-30 border border-black-2 bg-red-700 flex items-center justify-end sm:bg-lime-400 sm:justify-center sm:col-span-2 md:bg-red-700 md:col-span-1 md:items-start md:h-120">
+        <h2 class="text-8xl md:pt-10">3</h2>
+      </div>
+    </main>
+    <div class="flex flex-col gap-4 md:grid md:grid-cols-2">
+      <footer
+        class="w-full h-10 border border-black-2 bg-yellow-300 flex items-center justify-center italic">
+        Footer 1
+      </footer>
+      <footer
+        class="w-full h-10 border border-black-2 bg-yellow-300 flex items-center justify-center italic">
+        Footer 2
+      </footer>
+    </div>
+  </body>
+</html>
