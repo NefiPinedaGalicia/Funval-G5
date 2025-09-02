@@ -8,7 +8,7 @@ botoncito.addEventListener("click", function () {
   parrafo.textContent = "funval siempre los mejores";
 }); */
 
-let botoncito = document.querySelector("#btn");
+/* let botoncito = document.querySelector("#btn");
 let parrafo = document.querySelector("#parrafo");
 let imagen = document.querySelector("#img");
 let atras = document.querySelector("#body");
@@ -37,4 +37,20 @@ botoncito.addEventListener("click", function () {
       "bg-[url('https://upload.wikimedia.org/wikipedia/en/d/d0/Fiona_standing_human.png')]"
     );
   }
+}); */
+
+let form = document.querySelector("#formulario");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  //console.log(e);
+  let obj = {};
+  let nombreInput = document.querySelector("#nombre").value;
+  let edadInput = document.querySelector("#edad").value;
+  let esMiembroInput = document.querySelector("#check").checked;
+  obj.nombres = nombreInput;
+  obj.edad = parseInt(edadInput);
+  obj.esMiembroSud = esMiembroInput;
+  //console.log(nombreInput, apellidosInput);
+  console.log(obj);
 });
