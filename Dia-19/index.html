@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
+  </head>
+   <body
+    class="flex flex-col items-center justify-center p-10 bg-lime-200 h-full"
+  >
+    <div class="flex flex-col items-center justify-center">
+      
+      <button id="mostrar-tabla" class="bg-black rounded-2xl  text-white text-bold" >Mostrar tabla</button>
+    </div>
+    <div id="container-tabla" class="hidden fixed overflow-x-auto pt-100">
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3 w-1/5">Nombre del Heroe</th>
+            <th scope="col" class="px-6 py-3 w-1/5">Poder</th>
+            <th scope="col" class="px-6 py-3 w-2/5">Fuerza</th>
+            
+          </tr>
+        </thead>
+        <tbody id="body-Tabla"></tbody>
+      </table>
+
+    
+  </body>
+</html>
