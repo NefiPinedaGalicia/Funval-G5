@@ -2,7 +2,7 @@ let contenedor = document.querySelector("#contenedor");
 
 async function datosAxios() {
   try {
-    let { data } = await axios("http://jsonplaceholder.typicode.com/users");
+    let { data } = await axios("https://jsonplaceholder.typicode.com/users");
     data.forEach((usuario) => {
       contenedor.innerHTML += `
       <div
@@ -168,7 +168,7 @@ async function datosAxios() {
     }, 5000);
   } catch (error) {
     contenedor.innerHTML += `
-      <div class="flex flex-col bg-neutral-300 w-full h-60 animate-pulse rounded-xl p-4 gap-4" >
+      <div class="flex flex-col bg-neutral-300 w-full h-60 animate-pulse rounded-xl p-4 gap-4 col-start-2 row-start-2" >
           <div class="bg-neutral-400/50 w-full h-32 animate-pulse rounded-md"></div>
                <div class="flex flex-col justify-center items-center gap-2">
                     <p class="text-black font-Roboto-md text-center text-xl">❌ Error, no se pudieron leer los archivos ❌</p>
