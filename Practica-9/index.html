@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="w-full min-h-screen bg-[#182b32] flex flex-col justify-center items-center">
+    <section
+      id="container-principal"
+      class="flex flex-col justify-center items-center gap-8 sm:gap-10 md:gap-12 h-screen">
+      <div id="titulo" class="flex flex-row justify-center items-center mb-8">
+        <svg
+          id="cruz"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-cyan-400">
+          <line
+            x1="20"
+            y1="20"
+            x2="80"
+            y2="80"
+            stroke="currentColor"
+            stroke-width="12"
+            stroke-linecap="round" />
+          <line
+            x1="80"
+            y1="20"
+            x2="20"
+            y2="80"
+            stroke="currentColor"
+            stroke-width="12"
+            stroke-linecap="round" />
+        </svg>
+        <svg
+          id="circulo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-yellow-400">
+          <circle
+            cx="50"
+            cy="50"
+            r="30"
+            stroke="currentColor"
+            stroke-width="12"
+            fill="none" />
+        </svg>
+      </div>
+
+      <div
+        id="elegir-pieza"
+        class="w-80 sm:w-96 md:w-[28rem] h-60 sm:h-72 md:h-80 flex flex-col justify-center items-center rounded-2xl bg-[#1e3740] gap-8 sm:gap-10 md:gap-12">
+        <h3
+          class="text-white text-center text-bold text-lg sm:text-xl md:text-2xl">
+          Elige con que vas a jugar
+        </h3>
+        <div
+          id="contenedor-cruz-circulo"
+          class="w-[90%] shadow-4xl rounded-2xl h-15 sm:h-16 md:h-18 flex relative items-center bg-[#182b32]">
+          <div
+            id="contenedor-cruz"
+            class="w-full h-full flex justify-center bg-[#a9bfc9] rounded-l-2xl">
+            <button
+              id="cruz-principal"
+              class="w-full h-full flex justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998] active:shadow-[inset_0_-2px_0_0_#6b8998] active:translate-y-0.5 transition-all">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#182b32]">
+                <line
+                  x1="20"
+                  y1="20"
+                  x2="80"
+                  y2="80"
+                  stroke="currentColor"
+                  stroke-width="12"
+                  stroke-linecap="round" />
+                <line
+                  x1="80"
+                  y1="20"
+                  x2="20"
+                  y2="80"
+                  stroke="currentColor"
+                  stroke-width="12"
+                  stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div
+            id="contenedor-circulo"
+            class="w-full flex justify-center bg-[#182b32] rounded-r-2xl">
+            <button
+              id="circulo-principal"
+              class="w-full h-15 sm:h-16 md:h-18 flex justify-center items-center shadow-[inset_0_-4px_0_0_#182b32] active:shadow-[inset_0_-2px_0_0_#182b32] active:translate-y-0.5 transition-all">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#a9bfc9]">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="30"
+                  stroke="currentColor"
+                  stroke-width="12"
+                  fill="none" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <h3
+          class="text-[#828e92] text-center text-bold text-sm sm:text-base md:text-lg">
+          Las x siempre van primero
+        </h3>
+      </div>
+      <div class="flex flex-col gap-4 sm:gap-5 md:gap-6">
+        <button
+          id="VS-CPU-principal"
+          class="w-80 sm:w-96 md:w-[28rem] h-12 sm:h-14 md:h-16 bg-yellow-400 rounded-2xl shadow-[inset_0_-6px_0_0_#cc8f00] active:shadow-[inset_0_-2px_0_0_#cc8f00] active:translate-y-1 transition-all flex justify-center items-center text-black font-bold text-sm sm:text-base md:text-lg">
+          Nuevo Juego (VS CPU)
+        </button>
+        <button
+          id="VS-jugador-principal"
+          class="w-80 sm:w-96 md:w-[28rem] h-12 sm:h-14 md:h-16 bg-cyan-400 rounded-2xl shadow-[inset_0_-6px_0_0_#0e8c9c] active:shadow-[inset_0_-2px_0_0_#0e8c9c] active:translate-y-1 transition-all flex justify-center items-center text-black font-bold text-sm sm:text-base md:text-lg">
+          Nuevo Juego (VS Jugador)
+        </button>
+      </div>
+    </section>
+    <section
+      id="contenedor-juego"
+      class="hidden w-full flex flex-col justify-center items-center gap-8 sm:gap-10 md:gap-12 p-4 py-8">
+      <header
+        class="w-full max-w-xs sm:max-w-sm md:max-w-md grid grid-cols-3 justify-between items-center gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-8">
+        <div class="flex flex-row gap-0">
+          <svg
+            id="cruz"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-cyan-400">
+            <line
+              x1="20"
+              y1="20"
+              x2="80"
+              y2="80"
+              stroke="currentColor"
+              stroke-width="12"
+              stroke-linecap="round" />
+            <line
+              x1="80"
+              y1="20"
+              x2="20"
+              y2="80"
+              stroke="currentColor"
+              stroke-width="12"
+              stroke-linecap="round" />
+          </svg>
+          <svg
+            id="circulo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-yellow-400">
+            <circle
+              cx="50"
+              cy="50"
+              r="30"
+              stroke="currentColor"
+              stroke-width="12"
+              fill="none" />
+          </svg>
+        </div>
+        <div
+          class="h-10 sm:h-12 md:h-14 flex flex-row justify-center items-center bg-[#1e3741] rounded-2xl gap-2 text-white font-bold text-sm sm:text-base md:text-lg shadow-[inset_0_-4px_0_0_#0f2129] px-4">
+          <span> X </span>
+          <span> Turno </span>
+        </div>
+        <div class="flex flex-row justify-end">
+          <button
+            class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-[#a9bec9] rounded-2xl flex justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998] active:shadow-[inset_0_-2px_0_0_#6b8998] active:translate-y-0.5 transition-all">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-black">
+              <path d="M21 12a9 9 0 1 1-3-6.7L21 8" />
+              <polyline points="21 3 21 8 16 8" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+        <button
+          id="celda-0"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-1"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-2"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-3"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-4"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-5"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-6"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-7"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+        <button
+          id="celda-8"
+          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+      </div>
+      <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+        <div
+          class="w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 bg-cyan-400 rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#0e8c9c]">
+          <span class="font-bold text-black text-sm sm:text-base md:text-lg"
+            >X( )</span
+          >
+          <span class="font-bold text-black text-lg sm:text-xl md:text-2xl"
+            >0</span
+          >
+        </div>
+        <div
+          class="w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 bg-[#a9bec9] rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998]">
+          <span class="font-bold text-black text-sm sm:text-base md:text-lg"
+            >Empates</span
+          >
+          <span class="font-bold text-black text-lg sm:text-xl md:text-2xl"
+            >0</span
+          >
+        </div>
+        <div
+          class="w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 bg-yellow-400 rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#cc8f00]">
+          <span class="font-bold text-black text-sm sm:text-base md:text-lg"
+            >O( )</span
+          >
+          <span class="font-bold text-black text-lg sm:text-xl md:text-2xl"
+            >0</span
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      id="contenedor-final"
+      class="w-full h-full hidden flex-col justify-center items-center bg-black/50 fixed z-50">
+      <div
+        class="w-full h-60 sm:h-72 md:h-80 bg-[#1e3741] fixed flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 p-4">
+        <h3
+          id="resultado"
+          class="text-white font-bold text-xl sm:text-2xl md:text-3xl">
+          Ganaste
+        </h3>
+        <h2 class="text-cyan-400 font-bold text-4xl sm:text-5xl md:text-6xl">
+          <span id="svg-ganador"></span> Se llevo la victoria
+        </h2>
+        <div
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md grid grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+          <button
+            id="Salir"
+            class="w-full h-12 sm:h-14 md:h-16 rounded-2xl bg-[#a9bec9] shadow-[inset_0_-4px_0_0_#6b8998] active:shadow-[inset_0_-2px_0_0_#6b8998] active:translate-y-0.5 transition-all text-black font-bold text-sm sm:text-base md:text-lg">
+            Salir
+          </button>
+          <button
+            id="Continuar"
+            class="w-full h-12 sm:h-14 md:h-16 rounded-2xl bg-yellow-400 col-span-2 shadow-[inset_0_-4px_0_0_#cc8f00] active:shadow-[inset_0_-2px_0_0_#cc8f00] active:translate-y-0.5 transition-all text-black font-bold text-sm sm:text-base md:text-lg">
+            Siguiente Ronda
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      id="reiniciar"
+      class="w-full h-full hidden flex-col justify-center items-center bg-black/50 fixed">
+      <div
+        class="w-full h-60 sm:h-72 md:h-80 bg-[#1e3741] fixed flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 p-4">
+        <h2 class="text-[#a9bec9] font-bold text-3xl sm:text-4xl md:text-5xl">
+          ¿Seguro que quieres reiniciar?
+        </h2>
+        <div
+          class="w-full max-w-xs sm:max-w-sm md:max-w-md grid grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+          <button
+            id="reiniciar-continuar"
+            class="w-full h-12 sm:h-14 md:h-16 rounded-2xl bg-[#a9bec9] shadow-[inset_0_-4px_0_0_#6b8998] active:shadow-[inset_0_-2px_0_0_#6b8998] active:translate-y-0.5 transition-all text-black font-bold text-sm sm:text-base md:text-lg">
+            Si
+          </button>
+          <button
+            id="reiniciar-no"
+            class="w-full h-12 sm:h-14 md:h-16 rounded-2xl bg-yellow-400 shadow-[inset_0_-4px_0_0_#cc8f00] active:shadow-[inset_0_-2px_0_0_#cc8f00] active:translate-y-0.5 transition-all text-black font-bold text-sm sm:text-base md:text-lg">
+            No
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
