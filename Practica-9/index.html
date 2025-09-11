@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body
-    class="w-full min-h-screen bg-[#182b32] flex flex-col justify-center items-center">
+    class="w-full min-h-screen bg-[#182b32] flex flex-col justify-center items-center overflow-x-hidden">
     <section
       id="container-principal"
-      class="flex flex-col justify-center items-center gap-8 sm:gap-10 md:gap-12 h-screen">
+      class="flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 min-h-screen w-full px-4 py-8">
       <div id="titulo" class="flex flex-row justify-center items-center mb-8">
         <svg
           id="cruz"
@@ -52,20 +52,20 @@
 
       <div
         id="elegir-pieza"
-        class="w-80 sm:w-96 md:w-[28rem] h-60 sm:h-72 md:h-80 flex flex-col justify-center items-center rounded-2xl bg-[#1e3740] gap-8 sm:gap-10 md:gap-12">
+        class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto min-h-[15rem] sm:min-h-[18rem] md:min-h-[20rem] flex flex-col justify-center items-center rounded-2xl bg-[#1e3740] gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8">
         <h3
-          class="text-white text-center text-bold text-lg sm:text-xl md:text-2xl">
+          class="text-white text-center font-bold text-base sm:text-lg md:text-xl lg:text-2xl px-2">
           Elige con que vas a jugar
         </h3>
         <div
           id="contenedor-cruz-circulo"
-          class="w-[90%] shadow-4xl rounded-2xl h-15 sm:h-16 md:h-18 flex relative items-center bg-[#182b32]">
+          class="w-full max-w-xs shadow-4xl rounded-2xl h-12 sm:h-14 md:h-16 flex relative items-center bg-[#182b32]">
           <div
             id="contenedor-cruz"
             class="w-full h-full flex justify-center bg-[#a9bfc9] rounded-l-2xl">
             <button
               id="cruz-principal"
-              class="w-full h-full flex justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998] active:shadow-[inset_0_-2px_0_0_#6b8998] active:translate-y-0.5 transition-all">
+              class="w-full h-12 sm:h-14 md:h-16 flex justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998] active:shadow-[inset_0_-2px_0_0_#6b8998] active:translate-y-0.5 transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
@@ -94,7 +94,7 @@
             class="w-full flex justify-center bg-[#182b32] rounded-r-2xl">
             <button
               id="circulo-principal"
-              class="w-full h-15 sm:h-16 md:h-18 flex justify-center items-center shadow-[inset_0_-4px_0_0_#182b32] active:shadow-[inset_0_-2px_0_0_#182b32] active:translate-y-0.5 transition-all">
+              class="w-full h-12 sm:h-14 md:h-16 flex justify-center items-center shadow-[inset_0_-4px_0_0_#182b32] active:shadow-[inset_0_-2px_0_0_#182b32] active:translate-y-0.5 transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
@@ -111,28 +111,29 @@
           </div>
         </div>
         <h3
-          class="text-[#828e92] text-center text-bold text-sm sm:text-base md:text-lg">
+          class="text-[#828e92] text-center font-bold text-xs sm:text-sm md:text-base px-2">
           Las x siempre van primero
         </h3>
       </div>
-      <div class="flex flex-col gap-4 sm:gap-5 md:gap-6">
+      <div
+        class="flex flex-col gap-3 sm:gap-4 md:gap-5 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
         <button
           id="VS-CPU-principal"
-          class="w-80 sm:w-96 md:w-[28rem] h-12 sm:h-14 md:h-16 bg-yellow-400 rounded-2xl shadow-[inset_0_-6px_0_0_#cc8f00] active:shadow-[inset_0_-2px_0_0_#cc8f00] active:translate-y-1 transition-all flex justify-center items-center text-black font-bold text-sm sm:text-base md:text-lg">
+          class="w-full h-12 sm:h-14 md:h-16 bg-yellow-400 rounded-2xl shadow-[inset_0_-6px_0_0_#cc8f00] active:shadow-[inset_0_-2px_0_0_#cc8f00] active:translate-y-1 transition-all flex justify-center items-center text-black font-bold text-sm sm:text-base md:text-lg">
           Nuevo Juego (VS CPU)
         </button>
         <button
           id="VS-jugador-principal"
-          class="w-80 sm:w-96 md:w-[28rem] h-12 sm:h-14 md:h-16 bg-cyan-400 rounded-2xl shadow-[inset_0_-6px_0_0_#0e8c9c] active:shadow-[inset_0_-2px_0_0_#0e8c9c] active:translate-y-1 transition-all flex justify-center items-center text-black font-bold text-sm sm:text-base md:text-lg">
+          class="w-full h-12 sm:h-14 md:h-16 bg-cyan-400 rounded-2xl shadow-[inset_0_-6px_0_0_#0e8c9c] active:shadow-[inset_0_-2px_0_0_#0e8c9c] active:translate-y-1 transition-all flex justify-center items-center text-black font-bold text-sm sm:text-base md:text-lg">
           Nuevo Juego (VS Jugador)
         </button>
       </div>
     </section>
     <section
       id="contenedor-juego"
-      class="hidden w-full flex flex-col justify-center items-center gap-8 sm:gap-10 md:gap-12 p-4 py-8">
+      class="hidden w-full min-h-screen flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 p-4 py-8">
       <header
-        class="w-full max-w-xs sm:max-w-sm md:max-w-md grid grid-cols-3 justify-between items-center gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-8">
+        class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg grid grid-cols-3 justify-between items-center gap-2 sm:gap-3 md:gap-4">
         <div class="flex flex-row gap-0">
           <svg
             id="cruz"
@@ -193,60 +194,62 @@
           </button>
         </div>
       </header>
-      <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+      <div
+        class="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 w-full max-w-xs sm:max-w-sm md:max-w-md">
         <button
           id="celda-0"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-1"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-2"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-3"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-4"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-5"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-6"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-7"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
         <button
           id="celda-8"
-          class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#1e3741] rounded-2xl shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
+          class="aspect-square w-full bg-[#1e3741] rounded-xl sm:rounded-2xl shadow-[inset_0_-6px_0_0_#0f2129] sm:shadow-[inset_0_-8px_0_0_#0f2129] active:shadow-[inset_0_-3px_0_0_#0f2129] sm:active:shadow-[inset_0_-4px_0_0_#0f2129] active:translate-y-1 transition-all"></button>
       </div>
-      <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+      <div
+        class="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 w-full max-w-xs sm:max-w-sm md:max-w-md">
         <div
-          class="w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 bg-cyan-400 rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#0e8c9c]">
-          <span class="font-bold text-black text-sm sm:text-base md:text-lg"
+          class=" w-full h-14 sm:h-16 md:h-18 lg:h-20 bg-cyan-400 rounded-xl sm:rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#0e8c9c]">
+          <span id="jugadorX" class="font-bold text-black text-xs sm:text-sm md:text-base"
             >X( )</span
           >
-          <span class="font-bold text-black text-lg sm:text-xl md:text-2xl"
+          <span id="puntajeX" class="font-bold text-black text-base sm:text-lg md:text-xl"
             >0</span
           >
         </div>
         <div
-          class="w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 bg-[#a9bec9] rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998]">
-          <span class="font-bold text-black text-sm sm:text-base md:text-lg"
+          class="w-full h-14 sm:h-16 md:h-18 lg:h-20 bg-[#a9bec9] rounded-xl sm:rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#6b8998]">
+          <span class="font-bold text-black text-xs sm:text-sm md:text-base"
             >Empates</span
           >
-          <span class="font-bold text-black text-lg sm:text-xl md:text-2xl"
+          <span id="contadorEmpates" class="font-bold text-black text-base sm:text-lg md:text-xl"
             >0</span
           >
         </div>
         <div
-          class="w-20 h-16 sm:w-24 sm:h-18 md:w-28 md:h-20 bg-yellow-400 rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#cc8f00]">
-          <span class="font-bold text-black text-sm sm:text-base md:text-lg"
+          class="w-full h-14 sm:h-16 md:h-18 lg:h-20 bg-yellow-400 rounded-xl sm:rounded-2xl flex flex-col justify-center items-center shadow-[inset_0_-4px_0_0_#cc8f00]">
+          <span id="jugadorO" class="font-bold text-black text-xs sm:text-sm md:text-base"
             >O( )</span
           >
-          <span class="font-bold text-black text-lg sm:text-xl md:text-2xl"
+          <span id="puntajeO" class="font-bold text-black text-base sm:text-lg md:text-xl"
             >0</span
           >
         </div>
@@ -262,9 +265,10 @@
           class="text-white font-bold text-xl sm:text-2xl md:text-3xl">
           Ganaste
         </h3>
-        <h2 class="text-cyan-400 font-bold text-4xl sm:text-5xl md:text-6xl">
-          <span id="svg-ganador"></span> Se llevo la victoria
-        </h2>
+        <div class="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
+          <span id="svg-ganador"></span>
+          <h2 id="texto-victoria" class="text-cyan-400 font-bold text-2xl sm:text-3xl md:text-4xl">Se llevo la victoria</h2>
+        </div>
         <div
           class="w-full max-w-xs sm:max-w-sm md:max-w-md grid grid-cols-3 gap-4 sm:gap-5 md:gap-6">
           <button
